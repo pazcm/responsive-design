@@ -1,6 +1,7 @@
 # Responsive Design
 ## Mobile first approach
 ### HTML Structure
-### Stylling the header
-### . . .
+### Styling the header
+### Styling the section
+### Styling the columns
     
