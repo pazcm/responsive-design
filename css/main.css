@@ -1,3 +1,5 @@
+/*Global styles*/
+
 body, html {
     height: 100%;
     margin: 0;
@@ -19,18 +21,44 @@ body, html {
     background-color: #0097d3;
     height: 100%;
 }
-/* |centering vertically|  To maintain a middle section regardless of the device it's on */
-.article, .aside {
+/* |centering vertically|  To maintain a middle section regardless of the device it's on
+/*.article, .aside {*/
+/*    position: relative;*/
+/*    top: 50%;*/
+/*    transform: translateY(50%)*/
+/*}*/
+
+/*fix the vertical centering, also moving the column float inside the trigger mobile first*/
+.vcenter {
     position: relative;
     top: 50%;
-    transform: translateY(50%)
+    transform: translateY(50%);
 }
 
 .section-paragraph {
     font-size: 1em;
+    margin:10px;
 }
 
 .footer {
     background-color: #4a4a4f;
     padding: 15px;
+}
+
+/*.column {*/
+/*    float: left;*/
+/*}*/
+
+
+/*mobile first*/
+@media (min-width: 768px) {
+    .column {
+    float: left;
+    }
+    .column-60 {
+        width: 60%;
+    }
+    .column-40 {
+        width: 40%;
+    }
 }
